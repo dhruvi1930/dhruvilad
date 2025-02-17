@@ -1,0 +1,158 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  margin-top: 80px;
+  max-width: 1200px;
+  margin: 80px auto 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  color: #eee;
+}
+
+.experience.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0ef;
+  text-align: center;
+}
+
+.innerExperience {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 50px;
+}
+
+.experienceCard {
+  text-align: center;
+  padding: 30px;
+  width: 500px;
+  border-radius: 15px;
+  position: relative;
+  background: #222;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 238, 255, 0.2);
+}
+
+.experienceCard h3 {
+  margin-top: 50px;
+}
+
+.experienceCard ul {
+  text-align: left;
+  padding: 0 20px;
+}
+
+.experienceCard li {
+  margin-bottom: 5px;
+}
+
+.experienceCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 238, 255, 0.7);
+}
+
+.logoContainer {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background-color: #0ef;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 4px solid #222;
+}
+
+.companyLogo {
+  width: 85%;
+  border-radius: 50%;
+  height: auto;
+}
+
+.companyName {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 15px 0;
+  color: #0ef;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skillIcon {
+  font-size: 28px;
+  color: #0ef;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .innerExperience {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .experienceCard {
+    width: 90%;
+    margin: 20px;
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experience {
+    padding: 30px 15px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .experienceCard {
+    width: 100%;
+    max-width: 400px;
+    margin: 25px;
+  }
+
+  .companyName {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .experienceCard {
+    max-width: 90%;
+    margin: 20px;
+  }
+
+  .experienceCard ul {
+    padding: 0 10px;
+  }
+
+  .skillIcon {
+    font-size: 24px;
+  }
+}
