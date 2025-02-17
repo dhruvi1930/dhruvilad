@@ -1,0 +1,161 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+  position: relative;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 120px auto 0;
+  animation: popIn 1s ease-out;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.tagSection {
+  max-width: 700px;
+  color: #fff;
+  z-index: 1;
+}
+
+.tagSection h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0ef;
+}
+
+.tagSection p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.hireMe {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #0ef;
+  color: #0ef;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.hireMe:hover {
+  background: rgba(0, 238, 255, 0.2);
+  color: #fff;
+}
+
+.resume {
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  border: 2px solid #0ef;
+  color: #fff;
+  background: rgba(0, 238, 255, 0.2);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.resume:hover {
+  background: transparent;
+  color: #0ef;
+}
+
+.moon {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
+  background-image: linear-gradient(30deg, #13223f, #0e1a30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moon img.logo {
+  width: 180px;
+  height: auto;
+  filter: brightness(0.9);
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+@keyframes eclipse-animation {
+  0% {
+    transform: translate(-30px, 30px) scale(0.9);
+  }
+  50% {
+    background-color: #efdbd8;
+    box-shadow: 0 0 10px #f9f3f2, 0 0 80px 8px #c7938b;
+    transform: translate(0px, 0px) scale(1.02);
+  }
+  100% {
+    transform: translate(30px, -30px) scale(0.9);
+    box-shadow: none;
+  }
+}
+
+.moon::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  animation: eclipse-animation 3.2s linear infinite alternate;
+}
+
+@media screen and (max-width: 1000px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .tagSection {
+    max-width: 90%;
+  }
+
+  .tagSection h1 {
+    font-size: 2rem;
+  }
+
+  .tagSection p {
+    font-size: 1rem;
+  }
+
+  .button-group {
+    justify-content: center;
+  }
+
+  .moon {
+    width: 220px;
+    height: 220px;
+  }
+
+  .moon img.logo {
+    width: 150px;
+  }
+}
