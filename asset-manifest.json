@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/dhruvilad/static/css/main.1de6e6db.css",
+    "main.js": "/dhruvilad/static/js/main.31c3121c.js",
+    "static/js/453.295f98bd.chunk.js": "/dhruvilad/static/js/453.295f98bd.chunk.js",
+    "static/media/profile2.jpeg": "/dhruvilad/static/media/profile2.7ca81c775d52e1bed4ba.jpeg",
+    "static/media/White Beige Simple Woman & Business Blog Banner.png": "/dhruvilad/static/media/White Beige Simple Woman & Business Blog Banner.6ff658c5be89648ad9de.png",
+    "static/media/grandMehfil.png": "/dhruvilad/static/media/grandMehfil.66e5ec4ce5b4fc9f5cc8.png",
+    "static/media/profile1.png": "/dhruvilad/static/media/profile1.132cee6d0961a5fa056e.png",
+    "static/media/applicationTracker.png": "/dhruvilad/static/media/applicationTracker.25fbc03db4e3ac098325.png",
+    "static/media/Dhruvi_Logo.png": "/dhruvilad/static/media/Dhruvi_Logo.fefd2f479b4211826f7a.png",
+    "static/media/Business Analystical Dashboard.png": "/dhruvilad/static/media/Business Analystical Dashboard.38869411964d736f95de.png",
+    "static/media/DHRUVI LAD.pdf": "/dhruvilad/static/media/DHRUVI LAD.025cfbefeb316855e899.pdf",
+    "static/media/northerndevs_logo.png": "/dhruvilad/static/media/northerndevs_logo.6695521d02580f599d66.png",
+    "index.html": "/dhruvilad/index.html",
+    "main.1de6e6db.css.map": "/dhruvilad/static/css/main.1de6e6db.css.map",
+    "main.31c3121c.js.map": "/dhruvilad/static/js/main.31c3121c.js.map",
+    "453.295f98bd.chunk.js.map": "/dhruvilad/static/js/453.295f98bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1de6e6db.css",
+    "static/js/main.31c3121c.js"
+  ]
+}
