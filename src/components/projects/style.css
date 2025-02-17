@@ -1,0 +1,145 @@
+/* Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  margin-top: 80px;
+  max-width: 1200px;
+  margin: 80px auto 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Project Card */
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.project.left {
+  flex-direction: row;
+}
+
+.project.right {
+  flex-direction: row-reverse;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Project Image */
+.projectImage {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover .projectImage {
+  transform: scale(1.05);
+}
+
+/* Project Description */
+.projectDescription {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  color: white;
+}
+
+.projectDescription h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.skills span {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out;
+}
+
+.skills span:hover {
+  background: white;
+  color: black;
+}
+
+.projectLinks {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.projectLinks a {
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .projectDescription {
+    text-align: center;
+  }
+
+  .projectImage {
+    max-width: 100%;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icons {
+  color: #ffffff;
+  width: 25px;
+  height: 25px;
+}
+
+.icons:hover {
+  color: #0ef;
+}
